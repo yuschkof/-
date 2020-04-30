@@ -1,0 +1,31 @@
+Surfaces.prototype.cube = (x = 0, y = 0, z = 0, size = 10) => {
+    return new Subject ([
+        new Point (x + size, y + size, z + size),
+        new Point (x - size, y + size, z + size),
+        new Point (x - size, y - size, z + size),
+        new Point (x + size, y - size, z + size),
+        new Point (x + size, y + size, z - size),
+        new Point (x - size, y + size, z - size),
+        new Point (x - size, y - size, z - size),
+        new Point (x + size, y - size, z - size),
+    ],[
+        new Edge(0,1),
+        new Edge(1,0),
+        new Edge(-1,1),
+        new Edge(1,-1),
+        new Edge(0,-1),
+        new Edge(-1,0),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+        new Edge(0,1),
+    ])
+}
